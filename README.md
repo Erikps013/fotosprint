@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# 📸 Gerador de Fotos 3x4 para Impressão
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Um aplicativo web desenvolvido em **React** que permite ao usuário fazer upload de uma imagem, realizar o corte (crop) na proporção 3:4 e gerar um arquivo PDF pronto para impressão em papel fotográfico (10x15cm / A6).
 
-## Available Scripts
 
-In the project directory, you can run:
+## ✨ Funcionalidades
 
-### `npm start`
+- **Upload de Imagem:** Suporte para arquivos JPG, PNG e outros formatos de imagem.
+- **Corte Inteligente:** Interface de recorte fixada na proporção 3:4 para evitar distorções.
+- **Configuração de Quantidade:** Escolha quantas fotos deseja gerar no PDF.
+- **Layout Otimizado:** Organização automática de até 9 fotos por folha (grade 3x3) com espaçamento configurado para facilitar o corte manual.
+- **Responsivo:** Funciona perfeitamente em computadores e dispositivos móveis.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Tecnologias Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [React.js](https://reactjs.org/) - Biblioteca para a interface.
+- [react-easy-crop](https://github.com/ValentinH/react-easy-crop) - Ferramenta de recorte de imagem.
+- [jsPDF](https://rawgit.com/MrRio/jsPDF/master/docs/index.html) - Biblioteca para geração de documentos PDF.
+- [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS) - Estilização personalizada e responsiva.
 
-### `npm test`
+## 📦 Como rodar o projeto localmente
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/seu-usuario/fotosprint.git](https://github.com/Erikps013/fotosprint.git)
+Entre na pasta do projeto:
 
-### `npm run build`
+Bash
+cd fotosprint
+Instale as dependências:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Bash
+npm install
+Inicie o servidor de desenvolvimento:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Bash
+npm start
+O projeto abrirá automaticamente no seu navegador em http://localhost:3000.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+📐 Especificações Técnicas de Impressão
+O sistema foi calibrado para gerar PDFs com as seguintes medidas:
 
-### `npm run eject`
+Tamanho do Papel: A6 (105mm x 148mm).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Tamanho da Foto: 30mm x 40mm.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Espaçamento entre Fotos: 2mm.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Grade Máxima: 9 fotos por página.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🤝 Contribuição
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma Issue ou enviar um Pull Request.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Desenvolvido por Erick Pereira 🚀
